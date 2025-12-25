@@ -1,0 +1,45 @@
+# Build directories
+build/
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+Makefile
+
+# Compiled files
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Object files
+*.obj
+*.lib
+
+# Executable files
+doodle
+doodle.exe
+
+# Visual Studio files
+*.sln
+*.vcxproj
+Debug/
+Release/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+*.pdb
