@@ -1,0 +1,89 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.cpp text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+*.c text eol=lf
+*.cc text eol=lf
+*.cxx text eol=lf
+
+# CMake
+*.cmake text eol=lf
+CMakeLists.txt text eol=lf
+
+# Documentation
+*.md text eol=lf
+*.txt text eol=lf
+*.adoc text eol=lf
+
+# Configuration files
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.flv binary
+*.fla binary
+*.swf binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.eot binary
+*.woff binary
+*.pyc binary
+*.pdf binary
+*.so binary
+*.dll binary
+*.dylib binary
+*.a binary
+*.lib binary
+*.exe binary
+
+# Archives
+*.tar linguist-generated=true
+*.tar.gz linguist-generated=true
+*.zip linguist-generated=true
+
+# Build output
+*.o linguist-generated=true
+*.obj linguist-generated=true
+*.a linguist-generated=true
+*.lib linguist-generated=true
+*.so linguist-generated=true
+*.dll linguist-generated=true
+*.dylib linguist-generated=true
+
+# IDE files
+.vscode/* linguist-generated=true
+.idea/* linguist-generated=true
+*.user linguist-generated=true
+*.suo linguist-generated=true
+*.sln linguist-generated=true
+*.vcxproj linguist-generated=true
+*.vcxproj.filters linguist-generated=true
+
+# Git attributes for pull requests
+.github/pull_request_template.md merge=union
