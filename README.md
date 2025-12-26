@@ -92,43 +92,6 @@
 
 ---
 
-## 🎥 Demo
-
-<div align="center">
-
-### 🎞️ **Application in Action**
-
-<!-- Add demo GIF or video here -->
-```
-🎬 Coming Soon: Demo Video/GIF
-```
-
-### 📸 **Screenshots**
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://via.placeholder.com/300x200/1e1e1e/00ff00?text=Drawing+Mode" alt="Drawing Mode" width="300"/>
-      <br />
-      <b>Drawing Mode</b>
-    </td>
-    <td align="center">
-      <img src="https://via.placeholder.com/300x200/1e1e1e/ff0000?text=Shape+Tools" alt="Shape Tools" width="300"/>
-      <br />
-      <b>Shape Tools</b>
-    </td>
-    <td align="center">
-      <img src="https://via.placeholder.com/300x200/1e1e1e/0099ff?text=Color+Palette" alt="Color Palette" width="300"/>
-      <br />
-      <b>Color Palette</b>
-    </td>
-  </tr>
-</table>
-
-</div>
-
----
-
 ## 🚀 Quick Start
 
 ```bash
