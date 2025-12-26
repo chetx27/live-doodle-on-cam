@@ -18,14 +18,18 @@
 [Configuration](#-configuration) •
 [Contributing](#-contributing)
 
-<img src="https://img.shields.io/github/stars/chetx27/live-doodle-on-cam?style=social" alt="GitHub stars">
-<img src="https://img.shields.io/github/forks/chetx27/live-doodle-on-cam?style=social" alt="GitHub forks">
-<img src="https://img.shields.io/github/watchers/chetx27/live-doodle-on-cam?style=social" alt="GitHub watchers">
+![GitHub Stars](https://img.shields.io/github/stars/chetx27/live-doodle-on-cam?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/chetx27/live-doodle-on-cam?style=social)
+![GitHub Watchers](https://img.shields.io/github/watchers/chetx27/live-doodle-on-cam?style=social)
 
 ---
 
 **A powerful, real-time drawing application built with OpenCV and C++**  
 *Perfect for presentations, tutorials, digital art, and learning computer vision*
+
+### 🌟 Quick Highlights
+
+🖌️ **8 Drawing Tools** | 🎨 **10 Colors** | ⏪ **Undo/Redo** | 💾 **Save PNG** | ⚡ **30+ FPS** | 👌 **Easy to Use**
 
 </div>
 
@@ -89,6 +93,43 @@
 </td>
 </tr>
 </table>
+
+---
+
+## 🎥 Demo
+
+<div align="center">
+
+### 🎞️ **Application in Action**
+
+<!-- Add demo GIF or video here -->
+```
+🎬 Coming Soon: Demo Video/GIF
+```
+
+### 📸 **Screenshots**
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://via.placeholder.com/300x200/1e1e1e/00ff00?text=Drawing+Mode" alt="Drawing Mode" width="300"/>
+      <br />
+      <b>Drawing Mode</b>
+    </td>
+    <td align="center">
+      <img src="https://via.placeholder.com/300x200/1e1e1e/ff0000?text=Shape+Tools" alt="Shape Tools" width="300"/>
+      <br />
+      <b>Shape Tools</b>
+    </td>
+    <td align="center">
+      <img src="https://via.placeholder.com/300x200/1e1e1e/0099ff?text=Color+Palette" alt="Color Palette" width="300"/>
+      <br />
+      <b>Color Palette</b>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
@@ -222,21 +263,21 @@ g++ main_advanced.cpp -o live_doodle_advanced.exe ^
 | **Draw** | Left Click + Drag | Draw with current tool |
 | **Brush Size** | Mouse Wheel | Scroll up/down (1-20px) |
 | **Change Color** | Click Palette | Select color at top of screen |
-| **Clear** | C | Clear all drawings |
-| **Undo** | Z | Undo last action |
-| **Redo** | X | Redo undone action |
-| **Save** | S | Save as PNG with timestamp |
-| **Help** | H | Toggle help menu |
-| **Exit** | ESC | Close application |
+| **Clear** | <kbd>C</kbd> | Clear all drawings |
+| **Undo** | <kbd>Z</kbd> | Undo last action |
+| **Redo** | <kbd>X</kbd> | Redo undone action |
+| **Save** | <kbd>S</kbd> | Save as PNG with timestamp |
+| **Help** | <kbd>H</kbd> | Toggle help menu |
+| **Exit** | <kbd>ESC</kbd> | Close application |
 
 ### **Tool Selection**
 
 | Key | Tool | Key | Tool |
 |-----|------|-----|------|
-| **1** | Brush | **5** | Circle |
-| **2** | Eraser | **6** | Ellipse |
-| **3** | Line | **7** | Spray Paint |
-| **4** | Rectangle | **8** | Fill Tool |
+| <kbd>1</kbd> | Brush | <kbd>5</kbd> | Circle |
+| <kbd>2</kbd> | Eraser | <kbd>6</kbd> | Ellipse |
+| <kbd>3</kbd> | Line | <kbd>7</kbd> | Spray Paint |
+| <kbd>4</kbd> | Rectangle | <kbd>8</kbd> | Fill Tool |
 
 ---
 
@@ -290,9 +331,16 @@ void saveDrawing();        // Save as PNG with timestamp
 
 ### **Technology Stack**
 
-- **C++17** - Core programming language
-- **OpenCV 4.x** - Computer vision library
-- **CMake** - Cross-platform build system
+<div align="center">
+
+| Technology | Purpose | Version |
+|------------|---------|----------|
+| **C++** | Core Language | C++17 |
+| **OpenCV** | Computer Vision | 4.x |
+| **CMake** | Build System | 3.10+ |
+| **STL** | Data Structures | Standard |
+
+</div>
 
 ### **Component Breakdown**
 
@@ -311,15 +359,15 @@ void saveDrawing();        // Save as PNG with timestamp
 
 ### **Camera Settings**
 
-```cpp
-// In main_advanced.cpp
+Customize camera parameters in `main_advanced.cpp`:
 
+```cpp
 // Change camera device (0 = default, 1 = second camera)
 VideoCapture camera(0);
 
 // Set resolution
-camera.set(CAP_PROP_FRAME_WIDTH, 1280);    // Width in pixels
-camera.set(CAP_PROP_FRAME_HEIGHT, 720);    // Height in pixels
+camera.set(CAP_PROP_FRAME_WIDTH, 1280);    // Default: 640
+camera.set(CAP_PROP_FRAME_HEIGHT, 720);    // Default: 480
 
 // Set frame rate (if supported by camera)
 camera.set(CAP_PROP_FPS, 30);
@@ -327,17 +375,19 @@ camera.set(CAP_PROP_FPS, 30);
 
 ### **Drawing Defaults**
 
+Adjust default drawing parameters:
+
 ```cpp
 // Brush settings
-int brushSize = 3;                          // 1-20 pixels
-Scalar drawColor = Scalar(0, 0, 255);       // Red (BGR format)
+int brushSize = 3;                          // Range: 1-20 pixels
+Scalar drawColor = Scalar(0, 0, 255);       // Default: Red (BGR)
 
 // Undo settings
 int maxUndoLevels = 20;                     // History depth
 
 // UI settings
 bool showHelp = true;                       // Show help at startup
-bool showColorPalette = true;               // Show palette
+bool showColorPalette = true;               // Show color palette
 ```
 
 ---
@@ -362,6 +412,28 @@ bool showColorPalette = true;               // Show palette
 4. **🚀 Push** to the branch (`git push origin feature/AmazingFeature`)
 5. **🎉 Open** a Pull Request
 
+### **Feature Ideas**
+
+Want to contribute? Here are some ideas:
+
+- 👋 Hand gesture recognition (MediaPipe)
+- 🎬 Video recording functionality
+- 📝 Text annotation tool
+- 🎨 Custom color picker with RGB sliders
+- 📂 Multiple layer support
+- 🌐 Background blur/freeze option
+- 🖼️ Brush texture patterns
+
+---
+
+## 🐛 Known Issues
+
+- **Camera Compatibility**: Some USB cameras may require different device indices
+- **Performance**: High resolutions (>1080p) may impact FPS on older hardware
+- **Windows**: Path spaces in OpenCV installation can cause compilation issues
+
+**Found a bug?** [Open an issue](https://github.com/chetx27/live-doodle-on-cam/issues) →
+
 ---
 
 ## 📄 License
@@ -380,29 +452,49 @@ See [LICENSE](LICENSE) file for details
 
 <div align="center">
 
-### 👨‍💻 Author
+## 👨‍💻 Author
 
 **Chethana G (Chet)**
 
 [![GitHub](https://img.shields.io/badge/GitHub-chetx27-181717?logo=github)](https://github.com/chetx27)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://linkedin.com/in/chetx27)
+[![Email](https://img.shields.io/badge/Email-Contact-red?logo=gmail)](mailto:chethana.workspace@gmail.com)
 
 ---
 
-### 📊 Project Stats
+## 📊 Project Stats
 
+![GitHub Language](https://img.shields.io/github/languages/top/chetx27/live-doodle-on-cam)
 ![Code Size](https://img.shields.io/github/languages/code-size/chetx27/live-doodle-on-cam)
 ![Repo Size](https://img.shields.io/github/repo-size/chetx27/live-doodle-on-cam)
 ![Last Commit](https://img.shields.io/github/last-commit/chetx27/live-doodle-on-cam)
+![GitHub Issues](https://img.shields.io/github/issues/chetx27/live-doodle-on-cam)
 
-**Lines of Code**: 500+ | **Features**: 15+ | **OpenCV Functions**: 20+
+**Lines of Code**: 500+ | **Drawing Tools**: 8 | **Colors**: 10 | **Undo Levels**: 20
 
 ---
 
-⭐ **If you find this project helpful, please star the repository!**
+### 🌟 Show Your Support
+
+**If you find this project helpful:**
+
+⭐ **Star this repository**  
+👁️ **Watch for updates**  
+🍴 **Fork for your own projects**  
+💬 **Share with others**  
+🐛 **Report issues**  
+💡 **Suggest features**
+
+---
+
+<h3>Built for learners, creators, and innovators</h3>
 
 **Made with ❤️ and OpenCV**
 
 🚀 **Happy Doodling!**
+
+---
+
+*© 2025 Chethana G. All rights reserved.*
 
 </div>
