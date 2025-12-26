@@ -15,7 +15,7 @@
 [Demo](#-demo) •
 [Installation](#-installation) •
 [Usage](#-usage) •
-[Documentation](#-documentation) •
+[Configuration](#-configuration) •
 [Contributing](#-contributing)
 
 <img src="https://img.shields.io/github/stars/chetx27/live-doodle-on-cam?style=social" alt="GitHub stars">
@@ -28,24 +28,6 @@
 *Perfect for presentations, tutorials, digital art, and learning computer vision*
 
 </div>
-
----
-
-## 💁 Table of Contents
-
-- [✨ Features](#-features)
-- [🎥 Demo](#-demo)
-- [🚀 Quick Start](#-quick-start)
-- [💻 Installation](#-installation)
-- [🎮 Usage](#-usage)
-- [📖 Documentation](#-documentation)
-- [🏗️ Architecture](#%EF%B8%8F-architecture)
-- [🛠️ Configuration](#%EF%B8%8F-configuration)
-- [🎓 Learning](#-learning)
-- [🤝 Contributing](#-contributing)
-- [🐛 Troubleshooting](#-troubleshooting)
-- [📊 Roadmap](#-roadmap)
-- [📄 License](#-license)
 
 ---
 
@@ -270,191 +252,34 @@ g++ main_advanced.cpp -o live_doodle_advanced.exe ^
 
 ## 🎮 Usage
 
-### ⏯️ **Controls Reference**
+### **Basic Controls**
 
-<table>
-<tr>
-<th>Category</th>
-<th>Action</th>
-<th>Key/Mouse</th>
-<th>Description</th>
-</tr>
-<tr>
-<td rowspan="3"><b>Drawing</b></td>
-<td>Draw</td>
-<td><kbd>Left Click</kbd> + <kbd>Drag</kbd></td>
-<td>Draw with current tool</td>
-</tr>
-<tr>
-<td>Brush Size</td>
-<td><kbd>Mouse Wheel</kbd></td>
-<td>Scroll up/down to adjust (1-20px)</td>
-</tr>
-<tr>
-<td>Change Color</td>
-<td><kbd>Click Palette</kbd></td>
-<td>Click color bar at top of screen</td>
-</tr>
-<tr>
-<td rowspan="8"><b>Tools</b></td>
-<td>Brush</td>
-<td><kbd>1</kbd></td>
-<td>Freehand drawing tool</td>
-</tr>
-<tr>
-<td>Eraser</td>
-<td><kbd>2</kbd></td>
-<td>Remove drawings</td>
-</tr>
-<tr>
-<td>Line</td>
-<td><kbd>3</kbd></td>
-<td>Draw straight lines</td>
-</tr>
-<tr>
-<td>Rectangle</td>
-<td><kbd>4</kbd></td>
-<td>Draw rectangles</td>
-</tr>
-<tr>
-<td>Circle</td>
-<td><kbd>5</kbd></td>
-<td>Draw circles from center</td>
-</tr>
-<tr>
-<td>Ellipse</td>
-<td><kbd>6</kbd></td>
-<td>Draw elliptical shapes</td>
-</tr>
-<tr>
-<td>Spray</td>
-<td><kbd>7</kbd></td>
-<td>Spray paint effect</td>
-</tr>
-<tr>
-<td>Fill</td>
-<td><kbd>8</kbd></td>
-<td>Flood fill enclosed areas</td>
-</tr>
-<tr>
-<td rowspan="6"><b>Actions</b></td>
-<td>Clear Canvas</td>
-<td><kbd>C</kbd></td>
-<td>Erase all drawings</td>
-</tr>
-<tr>
-<td>Undo</td>
-<td><kbd>Z</kbd></td>
-<td>Undo last action (20 levels)</td>
-</tr>
-<tr>
-<td>Redo</td>
-<td><kbd>X</kbd></td>
-<td>Redo undone action</td>
-</tr>
-<tr>
-<td>Save</td>
-<td><kbd>S</kbd></td>
-<td>Save as PNG with timestamp</td>
-</tr>
-<tr>
-<td>Toggle Help</td>
-<td><kbd>H</kbd></td>
-<td>Show/hide help overlay</td>
-</tr>
-<tr>
-<td>Toggle Palette</td>
-<td><kbd>P</kbd></td>
-<td>Show/hide color palette</td>
-</tr>
-<tr>
-<td rowspan="1"><b>System</b></td>
-<td>Exit</td>
-<td><kbd>ESC</kbd></td>
-<td>Close application</td>
-</tr>
-</table>
+| Action | Key/Mouse | Description |
+|--------|-----------|-------------|
+| **Draw** | Left Click + Drag | Draw with current tool |
+| **Brush Size** | Mouse Wheel | Scroll up/down (1-20px) |
+| **Change Color** | Click Palette | Select color at top of screen |
+| **Clear** | C | Clear all drawings |
+| **Undo** | Z | Undo last action |
+| **Redo** | X | Redo undone action |
+| **Save** | S | Save as PNG with timestamp |
+| **Help** | H | Toggle help menu |
+| **Exit** | ESC | Close application |
 
-### 📚 **Usage Tips**
+### **Tool Selection**
 
-<details>
-<summary><b>🖌️ Shape Tools (Line, Rectangle, Circle, Ellipse)</b></summary>
-
-1. Select tool with number keys (3-6)
-2. Click and hold to set starting point
-3. Drag mouse to desired size/position
-4. Real-time preview shows shape while dragging
-5. Release mouse button to finalize
-
-**Pro Tip**: Hold <kbd>Shift</kbd> for perfect squares/circles (coming soon)
-
-</details>
-
-<details>
-<summary><b>🌈 Fill Tool</b></summary>
-
-1. Press <kbd>8</kbd> to select Fill tool
-2. Choose desired color from palette
-3. Click inside any enclosed area
-4. Area fills with selected color
-
-**Note**: Small gaps in boundaries may cause overflow
-
-</details>
-
-<details>
-<summary><b>🎨 Spray Paint</b></summary>
-
-1. Press <kbd>7</kbd> for Spray tool
-2. Adjust brush size for spray radius
-3. Click and drag slowly for dense coverage
-4. Move faster for lighter, scattered effect
-
-**Creative Uses**: Shading, textures, artistic effects
-
-</details>
-
-<details>
-<summary><b>⏪ Undo/Redo System</b></summary>
-
-- **Undo**: <kbd>Z</kbd> - Reverts last 20 actions
-- **Redo**: <kbd>X</kbd> - Restores undone actions
-- Redo stack clears when new action is performed
-- Memory-efficient circular buffer
-
-**Note**: Clear canvas (<kbd>C</kbd>) is also undoable
-
-</details>
-
-<details>
-<summary><b>💾 Saving Drawings</b></summary>
-
-1. Press <kbd>S</kbd> to save current drawing
-2. File saved as `doodle_YYYYMMDD_HHMMSS.png`
-3. Saved in current working directory
-4. Contains only drawing layer (transparent background)
-5. Compatible with image editors (Photoshop, GIMP, etc.)
-
-**Pro Tip**: Create a `drawings/` folder for organization
-
-</details>
-
-### 🎯 **Use Cases**
-
-| Use Case | Description | Best Tools |
-|----------|-------------|------------|
-| **🎬 Presentations** | Annotate slides and diagrams | Line, Rectangle, Brush |
-| **🎨 Digital Art** | Create artwork on live video | Brush, Spray, Fill |
-| **🏫 Teaching** | Explain concepts visually | All tools, Multiple colors |
-| **👨‍💻 Tutorials** | Record annotated screencasts | Brush, Line, Eraser |
-| **🎮 Gaming** | Add effects to streams | Spray, Circle, Custom colors |
-| **📝 Note-taking** | Visual notes with webcam | Brush, Text (coming soon) |
+| Key | Tool | Key | Tool |
+|-----|------|-----|------|
+| **1** | Brush | **5** | Circle |
+| **2** | Eraser | **6** | Ellipse |
+| **3** | Line | **7** | Spray Paint |
+| **4** | Rectangle | **8** | Fill Tool |
 
 ---
 
 ## 📖 Documentation
 
-### 🎯 **Project Structure**
+### **Project Structure**
 
 ```
 live-doodle-on-cam/
@@ -465,19 +290,10 @@ live-doodle-on-cam/
 ├── config.json              # Configuration file
 ├── LICENSE                  # MIT License
 ├── README.md                # This file
-├── .gitignore               # Git ignore rules
-│
-├── docs/                    # Documentation (coming soon)
-│   ├── API.md
-│   ├── CONTRIBUTING.md
-│   └── CHANGELOG.md
-│
-└── examples/                # Example drawings (coming soon)
-    ├── tutorial.png
-    └── artwork.png
+└── .gitignore               # Git ignore rules
 ```
 
-### 📚 **API Reference**
+### **API Reference**
 
 <details>
 <summary><b>Core Functions</b></summary>
@@ -509,26 +325,13 @@ void saveDrawing();        // Save as PNG with timestamp
 
 ## 🏗️ Architecture
 
-### 💻 **Technology Stack**
+### **Technology Stack**
 
-<table>
-<tr>
-<td width="33%" align="center">
-<b>C++17</b>
-<br>Core Language
-</td>
-<td width="33%" align="center">
-<b>OpenCV 4.x</b>
-<br>Computer Vision
-</td>
-<td width="33%" align="center">
-<b>CMake</b>
-<br>Build System
-</td>
-</tr>
-</table>
+- **C++17** - Core programming language
+- **OpenCV 4.x** - Computer vision library
+- **CMake** - Cross-platform build system
 
-### 🧩 **Component Breakdown**
+### **Component Breakdown**
 
 | Component | Responsibility | Key Technologies |
 |-----------|----------------|------------------|
@@ -543,7 +346,7 @@ void saveDrawing();        // Save as PNG with timestamp
 
 ## 🛠️ Configuration
 
-### ⚙️ **Camera Settings**
+### **Camera Settings**
 
 ```cpp
 // In main_advanced.cpp
@@ -559,7 +362,7 @@ camera.set(CAP_PROP_FRAME_HEIGHT, 720);    // Height in pixels
 camera.set(CAP_PROP_FPS, 30);
 ```
 
-### 🎨 **Drawing Defaults**
+### **Drawing Defaults**
 
 ```cpp
 // Brush settings
@@ -573,91 +376,6 @@ int maxUndoLevels = 20;                     // History depth
 bool showHelp = true;                       // Show help at startup
 bool showColorPalette = true;               // Show palette
 ```
-
-### 📝 **config.json**
-
-```json
-{
-  "camera": {
-    "device_id": 0,
-    "resolution": {"width": 640, "height": 480},
-    "fps": 30
-  },
-  "drawing": {
-    "default_tool": "brush",
-    "default_brush_size": 3,
-    "max_brush_size": 20
-  },
-  "ui": {
-    "show_help_on_startup": true,
-    "show_color_palette": true
-  }
-}
-```
-
----
-
-## 🎓 Learning
-
-### 🎯 **What You'll Learn**
-
-<table>
-<tr>
-<td width="50%">
-
-#### **Computer Vision**
-- ✅ Real-time video processing
-- ✅ Frame manipulation & overlay
-- ✅ Mouse event handling
-- ✅ Drawing primitives
-- ✅ Color space operations
-- ✅ Image I/O operations
-
-</td>
-<td width="50%">
-
-#### **C++ Programming**
-- ✅ Modern C++ features
-- ✅ STL containers (stack, vector)
-- ✅ Event-driven architecture
-- ✅ Memory management
-- ✅ Object-oriented design
-- ✅ Error handling
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### **Software Engineering**
-- ✅ State management patterns
-- ✅ Undo/redo implementation
-- ✅ UI/UX design principles
-- ✅ Modular code structure
-- ✅ Performance optimization
-- ✅ Cross-platform development
-
-</td>
-<td width="50%">
-
-#### **Tools & Technologies**
-- ✅ CMake build system
-- ✅ Git version control
-- ✅ OpenCV library
-- ✅ Debugging techniques
-- ✅ Documentation practices
-- ✅ Package managers (vcpkg, brew)
-
-</td>
-</tr>
-</table>
-
-### 📚 **Recommended Reading**
-
-- [OpenCV Documentation](https://docs.opencv.org/)
-- [C++ Reference](https://en.cppreference.com/)
-- [Modern C++ Best Practices](https://github.com/cpp-best-practices/cppbestpractices)
-- [Computer Vision: Algorithms and Applications](http://szeliski.org/Book/)
 
 ---
 
@@ -673,184 +391,13 @@ bool showColorPalette = true;               // Show palette
 
 </div>
 
-### 👥 **How to Contribute**
+### **How to Contribute**
 
 1. **🍴 Fork** the repository
-2. **🌱 Create** your feature branch
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. **✨ Commit** your changes
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-4. **🚀 Push** to the branch
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
+2. **🌱 Create** your feature branch (`git checkout -b feature/AmazingFeature`)
+3. **✨ Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **🚀 Push** to the branch (`git push origin feature/AmazingFeature`)
 5. **🎉 Open** a Pull Request
-
-### 💡 **Feature Ideas**
-
-<details>
-<summary><b>High Priority</b></summary>
-
-- [ ] Hand gesture recognition (MediaPipe)
-- [ ] Video recording functionality
-- [ ] Text annotation tool
-- [ ] Custom color picker (RGB/HSV)
-- [ ] Layer system (multiple drawing layers)
-
-</details>
-
-<details>
-<summary><b>Medium Priority</b></summary>
-
-- [ ] Background blur/freeze option
-- [ ] Brush texture patterns
-- [ ] Polygon drawing tool
-- [ ] Gradient fills
-- [ ] Screenshot capture
-
-</details>
-
-<details>
-<summary><b>Nice to Have</b></summary>
-
-- [ ] Face filters/AR effects
-- [ ] Touch/stylus support
-- [ ] Collaborative drawing
-- [ ] Mobile app version
-- [ ] Plugin system
-
-</details>
-
-### 📜 **Code Style**
-
-- Follow [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
-- Use meaningful variable names
-- Comment complex logic
-- Add documentation for public functions
-- Write clean, readable code
-
----
-
-## 🐛 Troubleshooting
-
-<details>
-<summary><b>❌ Camera Not Opening</b></summary>
-
-**Error Message:**
-```
-Error: Cannot open camera. Check if it's connected.
-```
-
-**Solutions:**
-1. Check physical camera connection
-2. Try different camera index (0, 1, 2...)
-3. Close other apps using camera (Zoom, Teams, etc.)
-4. Check camera permissions:
-   - **macOS**: System Preferences → Security & Privacy → Camera
-   - **Linux**: `ls /dev/video*` to list cameras
-   - **Windows**: Settings → Privacy → Camera
-5. Verify camera works in other apps
-
-</details>
-
-<details>
-<summary><b>❌ OpenCV Not Found</b></summary>
-
-**Error Message:**
-```
-fatal error: opencv2/opencv.hpp: No such file or directory
-```
-
-**Solutions:**
-1. **Linux**: Install with `sudo apt-get install libopencv-dev`
-2. **macOS**: Install with `brew install opencv`
-3. **Windows**: 
-   - Use vcpkg: `vcpkg install opencv4:x64-windows`
-   - Or download from [opencv.org](https://opencv.org/releases/)
-4. Set environment variables:
-   ```bash
-   export PKG_CONFIG_PATH=/path/to/opencv/lib/pkgconfig
-   ```
-5. For CMake, set `OpenCV_DIR` to OpenCV installation
-
-</details>
-
-<details>
-<summary><b>⚠️ Performance Issues</b></summary>
-
-**Symptoms:**
-- Low FPS (< 20)
-- Laggy drawing
-- Delayed response
-
-**Solutions:**
-1. **Reduce resolution**:
-   ```cpp
-   camera.set(CAP_PROP_FRAME_WIDTH, 320);
-   camera.set(CAP_PROP_FRAME_HEIGHT, 240);
-   ```
-2. **Limit undo stack**: Change `maxUndoLevels` to 10
-3. **Use release build**:
-   ```bash
-   cmake -DCMAKE_BUILD_TYPE=Release ..
-   ```
-4. **Close background apps**
-5. **Update graphics drivers**
-
-</details>
-
-<details>
-<summary><b>❌ Compilation Errors</b></summary>
-
-**Common Issues:**
-
-1. **C++11 not enabled**:
-   ```bash
-   g++ -std=c++11 main_advanced.cpp ...
-   ```
-
-2. **Missing libraries**:
-   ```bash
-   # Check OpenCV installation
-   pkg-config --modversion opencv4
-   
-   # List required libraries
-   pkg-config --libs opencv4
-   ```
-
-3. **Linker errors**: Add missing OpenCV modules
-   ```bash
-   -lopencv_core -lopencv_highgui -lopencv_videoio -lopencv_imgproc
-   ```
-
-</details>
-
----
-
-## 📊 Roadmap
-
-### 🔮 **Version 2.0** (Q1-Q2 2025)
-
-- [ ] 👋 Hand tracking for touchless drawing (MediaPipe)
-- [ ] 🎬 Video recording with audio commentary
-- [ ] 💁 Face filters and AR effects
-- [ ] 📂 Multiple layer support with blend modes
-- [ ] 🎨 Custom brush textures and patterns
-- [ ] ⚙️ Configuration file (JSON/YAML)
-- [ ] 🖋️ Touch/stylus support for tablets
-
-### 🚀 **Version 3.0** (Q3-Q4 2025)
-
-- [ ] 🤖 AI-powered drawing assistance
-- [ ] 🌍 Collaborative drawing over network
-- [ ] 📏 3D doodles with depth mapping
-- [ ] 📱 Mobile app version (OpenCV Android/iOS)
-- [ ] ☁️ Cloud save and sync
-- [ ] 🎮 Plugin/extension system
 
 ---
 
@@ -868,15 +415,7 @@ See [LICENSE](LICENSE) file for details
 
 ---
 
-## 👏 Acknowledgments
-
 <div align="center">
-
-**Special Thanks To:**
-
-🙏 OpenCV Community | 📚 Open Source Contributors | 🎓 Computer Vision Researchers
-
----
 
 ### 👨‍💻 Author
 
@@ -897,14 +436,7 @@ See [LICENSE](LICENSE) file for details
 
 ---
 
-<h3>If you find this project helpful, please consider:</h3>
-
-⭐ **Starring the repository**  
-👁️ **Watching for updates**  
-🍴 **Forking for your own use**  
-💬 **Sharing with others**  
-
----
+⭐ **If you find this project helpful, please star the repository!**
 
 **Made with ❤️ and OpenCV**
 
