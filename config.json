@@ -1,0 +1,53 @@
+{
+  "camera": {
+    "device_id": 0,
+    "resolution": {
+      "width": 640,
+      "height": 480
+    },
+    "fps": 30
+  },
+  "drawing": {
+    "default_tool": "brush",
+    "default_brush_size": 3,
+    "max_brush_size": 20,
+    "min_brush_size": 1,
+    "default_color": {
+      "r": 255,
+      "g": 0,
+      "b": 0
+    }
+  },
+  "ui": {
+    "show_help_on_startup": true,
+    "show_color_palette": true,
+    "window_title": "Live Doodle on Camera - Advanced"
+  },
+  "features": {
+    "max_undo_levels": 20,
+    "auto_save_enabled": false,
+    "auto_save_interval_seconds": 60
+  },
+  "colors": [
+    {"name": "Red", "bgr": [0, 0, 255]},
+    {"name": "Green", "bgr": [0, 255, 0]},
+    {"name": "Blue", "bgr": [255, 0, 0]},
+    {"name": "Yellow", "bgr": [0, 255, 255]},
+    {"name": "Magenta", "bgr": [255, 0, 255]},
+    {"name": "Cyan", "bgr": [255, 255, 0]},
+    {"name": "White", "bgr": [255, 255, 255]},
+    {"name": "Gray", "bgr": [128, 128, 128]},
+    {"name": "Orange", "bgr": [0, 128, 255]},
+    {"name": "Pink", "bgr": [203, 192, 255]}
+  ],
+  "tools": [
+    {"id": 0, "name": "Brush", "key": "1"},
+    {"id": 1, "name": "Eraser", "key": "2"},
+    {"id": 2, "name": "Line", "key": "3"},
+    {"id": 3, "name": "Rectangle", "key": "4"},
+    {"id": 4, "name": "Circle", "key": "5"},
+    {"id": 5, "name": "Ellipse", "key": "6"},
+    {"id": 6, "name": "Spray", "key": "7"},
+    {"id": 7, "name": "Fill", "key": "8"}
+  ]
+}
