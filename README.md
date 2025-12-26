@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🎨 Live Doodle on Camera
+# Live Doodle on Camera
 
-### *Transform Your Webcam into an Interactive Canvas*
+### Real-Time Computer Vision Drawing Application
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-blue.svg?logo=opencv)](https://opencv.org/)
@@ -11,12 +11,12 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/chetx27/live-doodle-on-cam)
 
-[Features](#-features) •
-[Demo](#-demo) •
-[Installation](#-installation) •
-[Usage](#-usage) •
-[Configuration](#-configuration) •
-[Contributing](#-contributing)
+[Features](#features) •
+[Installation](#installation) •
+[Usage](#usage) •
+[Architecture](#architecture) •
+[Configuration](#configuration) •
+[Contributing](#contributing)
 
 ![GitHub Stars](https://img.shields.io/github/stars/chetx27/live-doodle-on-cam?style=social)
 ![GitHub Forks](https://img.shields.io/github/forks/chetx27/live-doodle-on-cam?style=social)
@@ -24,71 +24,71 @@
 
 ---
 
-**A powerful, real-time drawing application built with OpenCV and C++**  
-*Perfect for presentations, tutorials, digital art, and learning computer vision*
+**Enterprise-grade real-time drawing application leveraging OpenCV and modern C++**  
+*Optimized for presentations, educational content, digital art creation, and computer vision research*
 
-### 🌟 Quick Highlights
+### Technical Specifications
 
-🖌️ **8 Drawing Tools** | 🎨 **10 Colors** | ⏪ **Undo/Redo** | 💾 **Save PNG** | ⚡ **30+ FPS** | 👌 **Easy to Use**
+**8 Drawing Tools** | **10 Color Presets** | **20-Level History** | **PNG Export** | **30+ FPS Performance** | **Cross-Platform**
 
 </div>
 
 ---
 
-## ✨ Features
+## Features
 
 <table>
 <tr>
 <td width="50%">
 
-### 🖌️ **Drawing Tools**
+### Drawing Tools
 
-- 🖌️ **Brush** - Smooth freehand drawing
-- ✂️ **Eraser** - Remove unwanted strokes
-- 📏 **Line** - Perfect straight lines
-- ▭ **Rectangle** - Draw rectangles
-- ◯ **Circle** - Create circles
-- 🕸️ **Ellipse** - Elliptical shapes
-- 🎨 **Spray Paint** - Artistic particle effects
-- 🌈 **Fill Tool** - Flood fill areas
+- **Brush** - Freehand vector drawing with anti-aliasing
+- **Eraser** - Selective stroke removal
+- **Line** - Precise straight line rendering
+- **Rectangle** - Rectangular shape primitive
+- **Circle** - Circular shape primitive
+- **Ellipse** - Elliptical shape primitive
+- **Spray** - Particle-based spray paint effect
+- **Fill** - Flood fill algorithm implementation
 
 </td>
 <td width="50%">
 
-### 🎨 **Colors & Styling**
+### Color Management
 
-- 🎨 **10 Preset Colors** with visual palette
-- 👆 **Click-to-Select** instant color switching
-- 📍 **Adjustable Brush** (1-20px)
-- ✨ **Anti-aliased** smooth rendering
-- 🎯 **Real-time Preview** for shapes
-- 🌈 **RGB Support** for custom colors
+- **10 Preset Colors** - Predefined color palette
+- **Click Selection** - Instant color switching interface
+- **Dynamic Sizing** - 1-20 pixel brush adjustment
+- **Anti-aliasing** - Smooth edge rendering
+- **Real-time Preview** - Live shape visualization
+- **RGB Support** - Full color spectrum access
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 💾 **Advanced Features**
+### Advanced Capabilities
 
-- ⏪ **Undo/Redo** (20 levels)
-- 💾 **Save as PNG** with timestamps
-- ⏱️ **Real-time Performance** (30+ FPS)
-- 🧠 **Memory Efficient** auto-management
-- 🎬 **Live Preview** overlay mode
-- ⌨️ **Keyboard Shortcuts** for speed
+- **Undo/Redo** - 20-level action history
+- **PNG Export** - Timestamped file output
+- **Performance** - Consistent 30+ FPS rendering
+- **Memory Management** - Optimized resource utilization
+- **Live Overlay** - Non-destructive preview mode
+- **Hotkeys** - Keyboard shortcut support
 
 </td>
 <td width="50%">
 
-### 🎯 **User Interface**
+### User Interface
 
-- 📊 **Interactive Palette** at screen top
-- ❓ **Help Menu** toggle (H key)
-- 📍 **Tool Indicator** shows current state
-- ⚡ **Fast Tool Switching** (1-8 keys)
-- 🔆 **Highlighted Selection** visual feedback
-- 🎨 **Clean UI** minimal distraction
+- **Interactive Palette** - Top-aligned color selector
+- **Help System** - Contextual assistance (H key)
+- **Status Indicators** - Active tool visualization
+- **Fast Switching** - Single-key tool selection
+- **Visual Feedback** - Selection highlighting
+- **Minimal UI** - Distraction-free workspace
 
 </td>
 </tr>
@@ -96,18 +96,17 @@
 
 ---
 
-## 🎥 Demo
+## Demo
 
 <div align="center">
 
-### 🎞️ **Application in Action**
+### Application Preview
 
-<!-- Add demo GIF or video here -->
 ```
-🎬 Coming Soon: Demo Video/GIF
+Demo Video/GIF - Coming Soon
 ```
 
-### 📸 **Screenshots**
+### Screenshots
 
 <table>
   <tr>
@@ -133,7 +132,7 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Clone the repository
@@ -143,22 +142,22 @@ cd live-doodle-on-cam
 # Compile (Linux/macOS)
 g++ -std=c++11 main_advanced.cpp -o live_doodle `pkg-config --cflags --libs opencv4`
 
-# Run
+# Execute
 ./live_doodle
 ```
 
 <div align="center">
 
-**🎉 That's it! Start drawing on your webcam feed!**
+**Application ready for deployment**
 
 </div>
 
 ---
 
-## 💻 Installation
+## Installation
 
 <details>
-<summary><b>🐧 Linux (Ubuntu/Debian)</b></summary>
+<summary><b>Linux (Ubuntu/Debian)</b></summary>
 <br>
 
 ```bash
@@ -176,14 +175,14 @@ mkdir build && cd build
 cmake ..
 make
 
-# Run
+# Execute
 ./live_doodle_advanced
 ```
 
 </details>
 
 <details>
-<summary><b>🍎 macOS</b></summary>
+<summary><b>macOS</b></summary>
 <br>
 
 ```bash
@@ -202,14 +201,14 @@ cd live-doodle-on-cam
 g++ -std=c++11 main_advanced.cpp -o live_doodle_advanced \
     `pkg-config --cflags --libs opencv4`
 
-# Run
+# Execute
 ./live_doodle_advanced
 ```
 
 </details>
 
 <details>
-<summary><b>🪟 Windows</b></summary>
+<summary><b>Windows</b></summary>
 <br>
 
 ### Option 1: Using vcpkg (Recommended)
@@ -233,7 +232,7 @@ cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE=[vcpkg root]/scripts/buildsystems/vcpkg.cmake
 cmake --build .
 
-# Run
+# Execute
 .\Debug\live_doodle_advanced.exe
 ```
 
@@ -254,64 +253,64 @@ g++ main_advanced.cpp -o live_doodle_advanced.exe ^
 
 ---
 
-## 🎮 Usage
+## Usage
 
-### **Basic Controls**
+### Control Reference
 
-| Action | Key/Mouse | Description |
-|--------|-----------|-------------|
-| **Draw** | Left Click + Drag | Draw with current tool |
-| **Brush Size** | Mouse Wheel | Scroll up/down (1-20px) |
-| **Change Color** | Click Palette | Select color at top of screen |
-| **Clear** | <kbd>C</kbd> | Clear all drawings |
-| **Undo** | <kbd>Z</kbd> | Undo last action |
-| **Redo** | <kbd>X</kbd> | Redo undone action |
-| **Save** | <kbd>S</kbd> | Save as PNG with timestamp |
-| **Help** | <kbd>H</kbd> | Toggle help menu |
-| **Exit** | <kbd>ESC</kbd> | Close application |
+| Action | Input | Description |
+|--------|-------|-------------|
+| **Draw** | Left Click + Drag | Activate current drawing tool |
+| **Brush Size** | Mouse Wheel | Adjust brush radius (1-20px) |
+| **Color Selection** | Click Palette | Select color from top bar |
+| **Clear Canvas** | <kbd>C</kbd> | Reset drawing surface |
+| **Undo** | <kbd>Z</kbd> | Revert last action |
+| **Redo** | <kbd>X</kbd> | Restore undone action |
+| **Export** | <kbd>S</kbd> | Save as timestamped PNG |
+| **Help** | <kbd>H</kbd> | Toggle help overlay |
+| **Exit** | <kbd>ESC</kbd> | Terminate application |
 
-### **Tool Selection**
+### Tool Selection Mapping
 
 | Key | Tool | Key | Tool |
 |-----|------|-----|------|
 | <kbd>1</kbd> | Brush | <kbd>5</kbd> | Circle |
 | <kbd>2</kbd> | Eraser | <kbd>6</kbd> | Ellipse |
-| <kbd>3</kbd> | Line | <kbd>7</kbd> | Spray Paint |
-| <kbd>4</kbd> | Rectangle | <kbd>8</kbd> | Fill Tool |
+| <kbd>3</kbd> | Line | <kbd>7</kbd> | Spray |
+| <kbd>4</kbd> | Rectangle | <kbd>8</kbd> | Fill |
 
 ---
 
-## 📖 Documentation
+## Documentation
 
-### **Project Structure**
+### Project Structure
 
 ```
 live-doodle-on-cam/
 │
-├── main.cpp                 # Original basic version
-├── main_advanced.cpp        # Enhanced version with all features
+├── main.cpp                 # Original implementation
+├── main_advanced.cpp        # Enhanced implementation
 ├── CMakeLists.txt           # Build configuration
-├── config.json              # Configuration file
+├── config.json              # Runtime configuration
 ├── LICENSE                  # MIT License
-├── README.md                # This file
-└── .gitignore               # Git ignore rules
+├── README.md                # Documentation
+└── .gitignore               # Version control exclusions
 ```
 
-### **API Reference**
+### API Reference
 
 <details>
 <summary><b>Core Functions</b></summary>
 
 ```cpp
-// Mouse callback handler
+// Event handling
 void mouseCallback(int event, int x, int y, int flags, void* userdata);
 
 // State management
-void saveState();           // Save current state for undo
-void undo();               // Undo last action
-void redo();               // Redo undone action
+void saveState();           // Save current canvas state
+void undo();               // Revert to previous state
+void redo();               // Restore undone state
 
-// Drawing functions
+// Drawing operations
 void sprayPaint(Mat& img, Point center, Scalar color, int radius);
 void floodFillTool(Mat& img, Point seed, Scalar newColor);
 
@@ -320,83 +319,106 @@ void drawColorPalette(Mat& img);
 void drawHelpText(Mat& img);
 
 // File operations
-void saveDrawing();        // Save as PNG with timestamp
+void saveDrawing();        // Export as PNG
 ```
 
 </details>
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
-### **Technology Stack**
+### Technology Stack
 
 <div align="center">
 
 | Technology | Purpose | Version |
 |------------|---------|----------|
 | **C++** | Core Language | C++17 |
-| **OpenCV** | Computer Vision | 4.x |
-| **CMake** | Build System | 3.10+ |
-| **STL** | Data Structures | Standard |
+| **OpenCV** | Computer Vision Framework | 4.x |
+| **CMake** | Build Automation | 3.10+ |
+| **STL** | Standard Library | C++17 |
 
 </div>
 
-### **Component Breakdown**
+### System Components
 
-| Component | Responsibility | Key Technologies |
-|-----------|----------------|------------------|
-| **Video Capture** | Real-time camera input | OpenCV VideoCapture |
-| **Drawing Engine** | Tool implementations | OpenCV drawing functions |
-| **State Manager** | Undo/redo system | STL stack, Mat cloning |
-| **UI Renderer** | Overlays and menus | OpenCV text & shapes |
-| **Event Handler** | User input processing | OpenCV callbacks |
-| **File Manager** | Save/export operations | OpenCV imwrite |
+| Component | Responsibility | Implementation |
+|-----------|----------------|----------------|
+| **Video Capture** | Real-time camera input | OpenCV VideoCapture API |
+| **Drawing Engine** | Tool rendering pipeline | OpenCV drawing primitives |
+| **State Manager** | History management | STL stack with Mat cloning |
+| **UI Renderer** | Interface overlay system | OpenCV text and shapes |
+| **Event Handler** | Input processing | OpenCV callback system |
+| **File Manager** | Export operations | OpenCV imwrite API |
 
 ---
 
-## 🛠️ Configuration
+## Configuration
 
-### **Camera Settings**
+### Camera Settings
 
-Customize camera parameters in `main_advanced.cpp`:
+Modify camera parameters in `main_advanced.cpp`:
 
 ```cpp
-// Change camera device (0 = default, 1 = second camera)
+// Camera device selection (0 = default, 1+ = additional devices)
 VideoCapture camera(0);
 
-// Set resolution
+// Resolution configuration
 camera.set(CAP_PROP_FRAME_WIDTH, 1280);    // Default: 640
 camera.set(CAP_PROP_FRAME_HEIGHT, 720);    // Default: 480
 
-// Set frame rate (if supported by camera)
+// Frame rate configuration
 camera.set(CAP_PROP_FPS, 30);
 ```
 
-### **Drawing Defaults**
+### Drawing Parameters
 
-Adjust default drawing parameters:
+Adjust default drawing settings:
 
 ```cpp
-// Brush settings
+// Brush configuration
 int brushSize = 3;                          // Range: 1-20 pixels
-Scalar drawColor = Scalar(0, 0, 255);       // Default: Red (BGR)
+Scalar drawColor = Scalar(0, 0, 255);       // BGR format (Red)
 
-// Undo settings
-int maxUndoLevels = 20;                     // History depth
+// History configuration
+int maxUndoLevels = 20;                     // Stack depth
 
-// UI settings
-bool showHelp = true;                       // Show help at startup
-bool showColorPalette = true;               // Show color palette
+// UI configuration
+bool showHelp = true;                       // Initial help state
+bool showColorPalette = true;               // Palette visibility
+```
+
+### Runtime Configuration
+
+Use `config.json` for persistent settings:
+
+```json
+{
+  "camera": {
+    "device_id": 0,
+    "resolution": {"width": 640, "height": 480},
+    "fps": 30
+  },
+  "drawing": {
+    "default_tool": "brush",
+    "default_brush_size": 3,
+    "max_brush_size": 20
+  },
+  "ui": {
+    "show_help_on_startup": true,
+    "show_color_palette": true
+  }
+}
 ```
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 <div align="center">
 
-**We love contributions! 🚀**
+**Contributions Welcome**
 
 [![Contributors](https://img.shields.io/github/contributors/chetx27/live-doodle-on-cam.svg)](https://github.com/chetx27/live-doodle-on-cam/graphs/contributors)
 [![Issues](https://img.shields.io/github/issues/chetx27/live-doodle-on-cam.svg)](https://github.com/chetx27/live-doodle-on-cam/issues)
@@ -404,45 +426,53 @@ bool showColorPalette = true;               // Show color palette
 
 </div>
 
-### **How to Contribute**
+### Contribution Workflow
 
-1. **🍴 Fork** the repository
-2. **🌱 Create** your feature branch (`git checkout -b feature/AmazingFeature`)
-3. **✨ Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
-4. **🚀 Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **🎉 Open** a Pull Request
+1. **Fork** the repository
+2. **Create** feature branch (`git checkout -b feature/Enhancement`)
+3. **Commit** changes (`git commit -m 'Add Enhancement'`)
+4. **Push** to branch (`git push origin feature/Enhancement`)
+5. **Submit** Pull Request
 
-### **Feature Ideas**
+### Development Roadmap
 
-Want to contribute? Here are some ideas:
+Priority enhancement opportunities:
 
-- 👋 Hand gesture recognition (MediaPipe)
-- 🎬 Video recording functionality
-- 📝 Text annotation tool
-- 🎨 Custom color picker with RGB sliders
-- 📂 Multiple layer support
-- 🌐 Background blur/freeze option
-- 🖼️ Brush texture patterns
+- **Hand Tracking** - MediaPipe integration for gesture control
+- **Video Recording** - Screen capture with audio support
+- **Text Annotation** - Font rendering and text tool
+- **Advanced Color Picker** - HSV color space interface
+- **Layer System** - Multi-layer composition support
+- **Background Processing** - Blur and freeze capabilities
+- **Texture Support** - Custom brush patterns
 
----
+### Code Standards
 
-## 🐛 Known Issues
-
-- **Camera Compatibility**: Some USB cameras may require different device indices
-- **Performance**: High resolutions (>1080p) may impact FPS on older hardware
-- **Windows**: Path spaces in OpenCV installation can cause compilation issues
-
-**Found a bug?** [Open an issue](https://github.com/chetx27/live-doodle-on-cam/issues) →
+- Adhere to [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+- Use descriptive variable naming conventions
+- Document complex algorithmic implementations
+- Provide API documentation for public interfaces
+- Maintain code readability and modularity
 
 ---
 
-## 📄 License
+## Known Issues
+
+- **Camera Compatibility** - USB camera device index may vary by system
+- **Performance** - Resolution >1080p may reduce FPS on legacy hardware
+- **Windows Path Handling** - Spaces in OpenCV installation path can cause build failures
+
+**Issue Reporting** - [GitHub Issues](https://github.com/chetx27/live-doodle-on-cam/issues)
+
+---
+
+## License
 
 <div align="center">
 
-This project is licensed under the **MIT License**
+Licensed under the **MIT License**
 
-See [LICENSE](LICENSE) file for details
+See [LICENSE](LICENSE) for complete terms
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -452,9 +482,11 @@ See [LICENSE](LICENSE) file for details
 
 <div align="center">
 
-## 👨‍💻 Author
+## Author
 
-**Chethana G (Chet)**
+**Chethana G**
+
+Software Engineer | Computer Vision Developer
 
 [![GitHub](https://img.shields.io/badge/GitHub-chetx27-181717?logo=github)](https://github.com/chetx27)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://linkedin.com/in/chetx27)
@@ -462,39 +494,26 @@ See [LICENSE](LICENSE) file for details
 
 ---
 
-## 📊 Project Stats
+## Project Metrics
 
 ![GitHub Language](https://img.shields.io/github/languages/top/chetx27/live-doodle-on-cam)
 ![Code Size](https://img.shields.io/github/languages/code-size/chetx27/live-doodle-on-cam)
-![Repo Size](https://img.shields.io/github/repo-size/chetx27/live-doodle-on-cam)
+![Repository Size](https://img.shields.io/github/repo-size/chetx27/live-doodle-on-cam)
 ![Last Commit](https://img.shields.io/github/last-commit/chetx27/live-doodle-on-cam)
-![GitHub Issues](https://img.shields.io/github/issues/chetx27/live-doodle-on-cam)
+![Open Issues](https://img.shields.io/github/issues/chetx27/live-doodle-on-cam)
 
-**Lines of Code**: 500+ | **Drawing Tools**: 8 | **Colors**: 10 | **Undo Levels**: 20
-
----
-
-### 🌟 Show Your Support
-
-**If you find this project helpful:**
-
-⭐ **Star this repository**  
-👁️ **Watch for updates**  
-🍴 **Fork for your own projects**  
-💬 **Share with others**  
-🐛 **Report issues**  
-💡 **Suggest features**
+**Codebase** - 500+ LOC | **Tools** - 8 | **Color Palette** - 10 | **History Depth** - 20
 
 ---
 
-<h3>Built for learners, creators, and innovators</h3>
+### Support This Project
 
-**Made with ❤️ and OpenCV**
-
-🚀 **Happy Doodling!**
+**Star** the repository | **Watch** for updates | **Fork** for development | **Share** with community
 
 ---
 
-*© 2025 Chethana G. All rights reserved.*
+**Engineered for performance and reliability**
+
+*Copyright © 2025 Chethana G. All rights reserved.*
 
 </div>
