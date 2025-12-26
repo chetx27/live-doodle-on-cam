@@ -31,7 +31,7 @@
 
 ---
 
-## Table of Contents
+## 💁 Table of Contents
 
 - [✨ Features](#-features)
 - [🎥 Demo](#-demo)
@@ -39,8 +39,8 @@
 - [💻 Installation](#-installation)
 - [🎮 Usage](#-usage)
 - [📖 Documentation](#-documentation)
-- [🏗️ Architecture](#-architecture)
-- [🛠️ Configuration](#-configuration)
+- [🏗️ Architecture](#%EF%B8%8F-architecture)
+- [🛠️ Configuration](#%EF%B8%8F-configuration)
 - [🎓 Learning](#-learning)
 - [🤝 Contributing](#-contributing)
 - [🐛 Troubleshooting](#-troubleshooting)
@@ -49,13 +49,13 @@
 
 ---
 
-## Features
+## ✨ Features
 
 <table>
 <tr>
 <td width="50%">
 
-### **Drawing Tools**
+### 🖌️ **Drawing Tools**
 
 - 🖌️ **Brush** - Smooth freehand drawing
 - ✂️ **Eraser** - Remove unwanted strokes
@@ -69,7 +69,7 @@
 </td>
 <td width="50%">
 
-### **Colors & Styling**
+### 🎨 **Colors & Styling**
 
 - 🎨 **10 Preset Colors** with visual palette
 - 👆 **Click-to-Select** instant color switching
@@ -83,26 +83,26 @@
 <tr>
 <td width="50%">
 
-### **Advanced Features**
+### 💾 **Advanced Features**
 
--  **Undo/Redo** (20 levels)
--  **Save as PNG** with timestamps
--  **Real-time Performance** (30+ FPS)
--  **Memory Efficient** auto-management
--  **Live Preview** overlay mode
--  **Keyboard Shortcuts** for speed
+- ⏪ **Undo/Redo** (20 levels)
+- 💾 **Save as PNG** with timestamps
+- ⏱️ **Real-time Performance** (30+ FPS)
+- 🧠 **Memory Efficient** auto-management
+- 🎬 **Live Preview** overlay mode
+- ⌨️ **Keyboard Shortcuts** for speed
 
 </td>
 <td width="50%">
 
-### **User Interface**
+### 🎯 **User Interface**
 
-- **Interactive Palette** at screen top
--  **Help Menu** toggle (H key)
--  **Tool Indicator** shows current state
--  **Fast Tool Switching** (1-8 keys)
--  **Highlighted Selection** visual feedback
--  **Clean UI** minimal distraction
+- 📊 **Interactive Palette** at screen top
+- ❓ **Help Menu** toggle (H key)
+- 📍 **Tool Indicator** shows current state
+- ⚡ **Fast Tool Switching** (1-8 keys)
+- 🔆 **Highlighted Selection** visual feedback
+- 🎨 **Clean UI** minimal distraction
 
 </td>
 </tr>
@@ -110,18 +110,18 @@
 
 ---
 
-## Demo
+## 🎥 Demo
 
 <div align="center">
 
-### **Application in Action**
+### 🎞️ **Application in Action**
 
 <!-- Add demo GIF or video here -->
 ```
 🎬 Coming Soon: Demo Video/GIF
 ```
 
-### **Screenshots**
+### 📸 **Screenshots**
 
 <table>
   <tr>
@@ -163,16 +163,16 @@ g++ -std=c++11 main_advanced.cpp -o live_doodle `pkg-config --cflags --libs open
 
 <div align="center">
 
-** That's it! Start drawing on your webcam feed!**
+**🎉 That's it! Start drawing on your webcam feed!**
 
 </div>
 
 ---
 
-## Installation
+## 💻 Installation
 
 <details>
-<summary><b> Linux (Ubuntu/Debian)</b></summary>
+<summary><b>🐧 Linux (Ubuntu/Debian)</b></summary>
 <br>
 
 ```bash
@@ -197,7 +197,7 @@ make
 </details>
 
 <details>
-<summary><b> macOS</b></summary>
+<summary><b>🍎 macOS</b></summary>
 <br>
 
 ```bash
@@ -268,9 +268,9 @@ g++ main_advanced.cpp -o live_doodle_advanced.exe ^
 
 ---
 
-## Usage
+## 🎮 Usage
 
-### **Controls Reference**
+### ⏯️ **Controls Reference**
 
 <table>
 <tr>
@@ -375,10 +375,10 @@ g++ main_advanced.cpp -o live_doodle_advanced.exe ^
 </tr>
 </table>
 
-### **Usage Tips**
+### 📚 **Usage Tips**
 
 <details>
-<summary><b> Shape Tools (Line, Rectangle, Circle, Ellipse)</b></summary>
+<summary><b>🖌️ Shape Tools (Line, Rectangle, Circle, Ellipse)</b></summary>
 
 1. Select tool with number keys (3-6)
 2. Click and hold to set starting point
@@ -391,7 +391,7 @@ g++ main_advanced.cpp -o live_doodle_advanced.exe ^
 </details>
 
 <details>
-<summary><b>Fill Tool</b></summary>
+<summary><b>🌈 Fill Tool</b></summary>
 
 1. Press <kbd>8</kbd> to select Fill tool
 2. Choose desired color from palette
@@ -403,7 +403,7 @@ g++ main_advanced.cpp -o live_doodle_advanced.exe ^
 </details>
 
 <details>
-<summary><b> Spray Paint</b></summary>
+<summary><b>🎨 Spray Paint</b></summary>
 
 1. Press <kbd>7</kbd> for Spray tool
 2. Adjust brush size for spray radius
@@ -415,7 +415,7 @@ g++ main_advanced.cpp -o live_doodle_advanced.exe ^
 </details>
 
 <details>
-<summary><b> Undo/Redo System</b></summary>
+<summary><b>⏪ Undo/Redo System</b></summary>
 
 - **Undo**: <kbd>Z</kbd> - Reverts last 20 actions
 - **Redo**: <kbd>X</kbd> - Restores undone actions
@@ -439,22 +439,22 @@ g++ main_advanced.cpp -o live_doodle_advanced.exe ^
 
 </details>
 
-### **Use Cases**
+### 🎯 **Use Cases**
 
 | Use Case | Description | Best Tools |
 |----------|-------------|------------|
-| ** Presentations** | Annotate slides and diagrams | Line, Rectangle, Brush |
-| ** Digital Art** | Create artwork on live video | Brush, Spray, Fill |
-| ** Teaching** | Explain concepts visually | All tools, Multiple colors |
-| ** Tutorials** | Record annotated screencasts | Brush, Line, Eraser |
-| ** Gaming** | Add effects to streams | Spray, Circle, Custom colors |
-| ** Note-taking** | Visual notes with webcam | Brush, Text (coming soon) |
+| **🎬 Presentations** | Annotate slides and diagrams | Line, Rectangle, Brush |
+| **🎨 Digital Art** | Create artwork on live video | Brush, Spray, Fill |
+| **🏫 Teaching** | Explain concepts visually | All tools, Multiple colors |
+| **👨‍💻 Tutorials** | Record annotated screencasts | Brush, Line, Eraser |
+| **🎮 Gaming** | Add effects to streams | Spray, Circle, Custom colors |
+| **📝 Note-taking** | Visual notes with webcam | Brush, Text (coming soon) |
 
 ---
 
-## Documentation
+## 📖 Documentation
 
-### **Project Structure**
+### 🎯 **Project Structure**
 
 ```
 live-doodle-on-cam/
@@ -477,7 +477,7 @@ live-doodle-on-cam/
     └── artwork.png
 ```
 
-### **API Reference**
+### 📚 **API Reference**
 
 <details>
 <summary><b>Core Functions</b></summary>
@@ -507,54 +507,28 @@ void saveDrawing();        // Save as PNG with timestamp
 
 ---
 
-## Architecture
+## 🏗️ Architecture
 
-<div align="center">
-
-```mermaid
-graph TD
-    A[Main Loop] --> B[Camera Capture]
-    B --> C[Frame Processing]
-    C --> D[Drawing Layer]
-    D --> E[Overlay Blend]
-    E --> F[UI Rendering]
-    F --> G[Display Output]
-    
-    H[Mouse Events] --> I[Tool Handler]
-    I --> D
-    
-    J[Keyboard Input] --> K[Action Handler]
-    K --> D
-    K --> L[State Manager]
-    L --> M[Undo Stack]
-    L --> N[Redo Stack]
-```
-
-</div>
-
-### **Technology Stack**
+### 💻 **Technology Stack**
 
 <table>
 <tr>
 <td width="33%" align="center">
-<img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" width="64"/>
-<br><b>C++17</b>
+<b>C++17</b>
 <br>Core Language
 </td>
 <td width="33%" align="center">
-<img src="https://opencv.org/wp-content/uploads/2020/07/OpenCV_logo_black_.png" width="64"/>
-<br><b>OpenCV 4.x</b>
+<b>OpenCV 4.x</b>
 <br>Computer Vision
 </td>
 <td width="33%" align="center">
-<img src="https://img.icons8.com/color/96/000000/cmake.png" width="64"/>
-<br><b>CMake</b>
+<b>CMake</b>
 <br>Build System
 </td>
 </tr>
 </table>
 
-### **Component Breakdown**
+### 🧩 **Component Breakdown**
 
 | Component | Responsibility | Key Technologies |
 |-----------|----------------|------------------|
@@ -567,9 +541,9 @@ graph TD
 
 ---
 
-## Configuration
+## 🛠️ Configuration
 
-### **Camera Settings**
+### ⚙️ **Camera Settings**
 
 ```cpp
 // In main_advanced.cpp
@@ -585,7 +559,7 @@ camera.set(CAP_PROP_FRAME_HEIGHT, 720);    // Height in pixels
 camera.set(CAP_PROP_FPS, 30);
 ```
 
-### **Drawing Defaults**
+### 🎨 **Drawing Defaults**
 
 ```cpp
 // Brush settings
@@ -600,7 +574,7 @@ bool showHelp = true;                       // Show help at startup
 bool showColorPalette = true;               // Show palette
 ```
 
-### **config.json**
+### 📝 **config.json**
 
 ```json
 {
@@ -623,9 +597,9 @@ bool showColorPalette = true;               // Show palette
 
 ---
 
-## Learning
+## 🎓 Learning
 
-### **What You'll Learn**
+### 🎯 **What You'll Learn**
 
 <table>
 <tr>
@@ -678,7 +652,7 @@ bool showColorPalette = true;               // Show palette
 </tr>
 </table>
 
-### **Recommended Reading**
+### 📚 **Recommended Reading**
 
 - [OpenCV Documentation](https://docs.opencv.org/)
 - [C++ Reference](https://en.cppreference.com/)
@@ -687,7 +661,7 @@ bool showColorPalette = true;               // Show palette
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 <div align="center">
 
@@ -699,14 +673,14 @@ bool showColorPalette = true;               // Show palette
 
 </div>
 
-### **How to Contribute**
+### 👥 **How to Contribute**
 
 1. **🍴 Fork** the repository
-2. **Create** your feature branch
+2. **🌱 Create** your feature branch
    ```bash
    git checkout -b feature/AmazingFeature
    ```
-3. ** Commit** your changes
+3. **✨ Commit** your changes
    ```bash
    git commit -m 'Add some AmazingFeature'
    ```
@@ -714,9 +688,9 @@ bool showColorPalette = true;               // Show palette
    ```bash
    git push origin feature/AmazingFeature
    ```
-5. ** Open** a Pull Request
+5. **🎉 Open** a Pull Request
 
-###  **Feature Ideas**
+### 💡 **Feature Ideas**
 
 <details>
 <summary><b>High Priority</b></summary>
@@ -751,7 +725,7 @@ bool showColorPalette = true;               // Show palette
 
 </details>
 
-### **Code Style**
+### 📜 **Code Style**
 
 - Follow [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - Use meaningful variable names
@@ -761,10 +735,10 @@ bool showColorPalette = true;               // Show palette
 
 ---
 
-## Troubleshooting
+## 🐛 Troubleshooting
 
 <details>
-<summary><b> Camera Not Opening</b></summary>
+<summary><b>❌ Camera Not Opening</b></summary>
 
 **Error Message:**
 ```
@@ -784,7 +758,7 @@ Error: Cannot open camera. Check if it's connected.
 </details>
 
 <details>
-<summary><b> OpenCV Not Found</b></summary>
+<summary><b>❌ OpenCV Not Found</b></summary>
 
 **Error Message:**
 ```
@@ -806,7 +780,7 @@ fatal error: opencv2/opencv.hpp: No such file or directory
 </details>
 
 <details>
-<summary><b> Performance Issues</b></summary>
+<summary><b>⚠️ Performance Issues</b></summary>
 
 **Symptoms:**
 - Low FPS (< 20)
@@ -816,11 +790,13 @@ fatal error: opencv2/opencv.hpp: No such file or directory
 **Solutions:**
 1. **Reduce resolution**:
    ```cpp
-  
+   camera.set(CAP_PROP_FRAME_WIDTH, 320);
+   camera.set(CAP_PROP_FRAME_HEIGHT, 240);
    ```
-2. **Limit undo stack**: Change  to 10
+2. **Limit undo stack**: Change `maxUndoLevels` to 10
 3. **Use release build**:
    ```bash
+   cmake -DCMAKE_BUILD_TYPE=Release ..
    ```
 4. **Close background apps**
 5. **Update graphics drivers**
@@ -828,32 +804,34 @@ fatal error: opencv2/opencv.hpp: No such file or directory
 </details>
 
 <details>
-<summary><b> Compilation Errors</b></summary>
+<summary><b>❌ Compilation Errors</b></summary>
 
 **Common Issues:**
 
 1. **C++11 not enabled**:
    ```bash
+   g++ -std=c++11 main_advanced.cpp ...
+   ```
 
 2. **Missing libraries**:
    ```bash
+   # Check OpenCV installation
+   pkg-config --modversion opencv4
+   
+   # List required libraries
+   pkg-config --libs opencv4
+   ```
 
 3. **Linker errors**: Add missing OpenCV modules
    ```bash
+   -lopencv_core -lopencv_highgui -lopencv_videoio -lopencv_imgproc
+   ```
 
 </details>
 
 ---
 
-## Roadmap
-
-<div align="center">
-
-### **Development Timeline**
-
-</div>
-
-```
+## 📊 Roadmap
 
 ### 🔮 **Version 2.0** (Q1-Q2 2025)
 
@@ -890,7 +868,7 @@ See [LICENSE](LICENSE) file for details
 
 ---
 
-## Acknowledgments
+## 👏 Acknowledgments
 
 <div align="center">
 
@@ -900,16 +878,16 @@ See [LICENSE](LICENSE) file for details
 
 ---
 
-### Author
+### 👨‍💻 Author
 
-**Chethana G**
+**Chethana G (Chet)**
 
 [![GitHub](https://img.shields.io/badge/GitHub-chetx27-181717?logo=github)](https://github.com/chetx27)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://linkedin.com/in/chetx27)
 
 ---
 
-### Project Stats
+### 📊 Project Stats
 
 ![Code Size](https://img.shields.io/github/languages/code-size/chetx27/live-doodle-on-cam)
 ![Repo Size](https://img.shields.io/github/repo-size/chetx27/live-doodle-on-cam)
@@ -917,17 +895,19 @@ See [LICENSE](LICENSE) file for details
 
 **Lines of Code**: 500+ | **Features**: 15+ | **OpenCV Functions**: 20+
 
-
 ---
 
 <h3>If you find this project helpful, please consider:</h3>
 
-⭐ **Starring the repository**   
-🍴 **Forking**  
-💬 **Sharing**  
+⭐ **Starring the repository**  
+👁️ **Watching for updates**  
+🍴 **Forking for your own use**  
+💬 **Sharing with others**  
 
 ---
 
 **Made with ❤️ and OpenCV**
+
+🚀 **Happy Doodling!**
 
 </div>
