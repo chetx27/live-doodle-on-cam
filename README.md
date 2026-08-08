@@ -1,4 +1,4 @@
-# Live Doodle on Camera
+## Live Doodle on Camera
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)](https://opencv.org/)
@@ -129,24 +129,8 @@ Security vulnerabilities should be reported via email to chethana.workspace@gmai
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Citation
-
-If you use this software in your research, please cite:
-
-```bibtex
-@software{live_doodle_2025,
-  author = {Chethana G},
-  title = {Live Doodle on Camera},
-  year = {2025},
-  url = {https://github.com/chetx27/live-doodle-on-cam}
-}
-```
 
 ## References
 
 - [OpenCV Documentation](https://docs.opencv.org/)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/)
-
----
-
-**Project Status:** Active Development | **Version:** 1.0.0 | **Maintainer:** [Chethana G](https://github.com/chetx27)
